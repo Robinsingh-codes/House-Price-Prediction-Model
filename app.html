@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+   <p id="robin">Robin Singh 8719150 cse 7 sem</p>
+    <title>House Price Prediction Model </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <h2>Area(Square Foot)</h2>
+        <input class="area" type="text" id="uisqft" classs="floatlabel" name="Squareft" value="1000">
+
+        <h2>BHK</h2>
+        <input type="text" class="bhk" id="uiBHK" name="uiBHK" value="1">
+        <br>
+
+        <h2>Bath</h2>
+        <input type="text" class="bath" id="uiBathrooms" name="uiBathrooms" value="1">
+
+        <h2>Location</h2>
+        <div>
+            <select class="location" name="" id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Electronic City</option>
+                <option>Rajaji Nagar</option>
+                <option>1st Phase Jp Nagar</option>
+            </select>
+        </div>
+        <button class="submit" " type="button">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result">
+            <h2> </h2>
+        </div>
+</body>
+
+</html>
