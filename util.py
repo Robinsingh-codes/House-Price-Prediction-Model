@@ -35,14 +35,16 @@ def load_saved_artifacts():
     print("loading saved artifacts ...start")
     global __data_columns
     global __locations
-    with open("C:/Users/hp/Desktop/RObin datascience anaconda projects/server/artifacts/columns.json",'r') as f:
+    with open("columns.json",'r') as f:
+   # with open("C:/Users/hp/Desktop/RObin datascience anaconda projects/server/artifacts/columns.json",'r') as f:
         # object loaded should be converted into dictionary
         __data_columns = json.load(f)['data_columns']
         #python index slicing to get the index of first location out of json file
         __locations = __data_columns[3:]
 
     global __model
-    with open("C:/Users/hp/Desktop/RObin datascience anaconda projects/server/artifacts/banglore_home_prices_model.pickle",'rb') as f:
+    with open("banglore_home_prices_model.pickle",'rb') as f:
+    #with open("C:/Users/hp/Desktop/RObin datascience anaconda projects/server/artifacts/banglore_home_prices_model.pickle",'rb') as f:
         __model = pickle.load(f)
     print("loading artifacts.....done")
 
